@@ -1,0 +1,157 @@
+.container-skills{
+    box-sizing: border-box;
+}
+
+.container-skills{
+    background-color: #f5f5f5;
+    padding: 15px 8%;
+    padding-bottom: 100px;
+}
+
+.container-skills .heading{
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+}
+
+.container-skills .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.container-skills .box-container .box{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 2px 8px;
+    border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container-skills .box-container .box img{
+    position: relative;
+    padding: 40px 10px;
+    right: 2px;
+    top: 5px;
+    height: 45px;
+}
+.container-skills .box-container .box h3{
+    position: relative;
+    font-size: 15px;
+    right: 5px;
+    left: 2px;
+    bottom: 10px;
+}
+
+/*FORMACION ACADEMICA*/
+.container-formacion{
+    box-sizing: border-box;
+    background-color: #EAF2FD;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container-formacion .heading{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+    margin-top: 2rem;
+}
+
+.container-formacion .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 80px 15px;
+    padding-top: 40px;
+}
+
+.container-formacion .box-container .box{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 50px;
+    border-radius: 5px;
+}
+
+.container-formacion .box-container .box img{
+    height: 120px;
+    position: relative;
+    top: 20px;
+}
+.container-formacion .box-container h3{
+    position: relative;
+    top: 100px;
+    right: 5px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #464646;
+
+}
+
+.container-formacion .box-container p{
+    position: relative;
+    top: 110px;
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 500;
+    
+}
+
+
+@media (max-width: 768px){
+
+    .container-formacion{
+        padding: 10px 2%;
+        padding-bottom: 50px;
+    }
+
+    .container-formacion .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-gap: 50px 15px;
+    }
+    
+    .container-formacion .box-container .box img{
+        height: 70px;
+        position: relative;
+        top: 2px;
+    }
+
+    .container-formacion .box-container h3{
+        top: 20px;
+        right: 5px;
+        font-size: 14px;
+    
+    }
+
+    .container-formacion .box-container p{
+        position: relative;
+        top: 25px;
+        font-size: 1rem;
+        color: #464646;
+        font-weight: 500;
+        
+    }
+}
+
+
+@media (max-width: 480px){
+    .container-skills{
+        width: 115%;
+    }
+    .container-formacion{
+        width: 115%;
+    }
+    .container-formacion .heading{
+        font-size: 26px;
+    }
+
+    .container-formacion .box-container {
+        text-align: center;
+        padding: 20px 20px;
+        border-radius: 5px;
+    }
+}
+
+
